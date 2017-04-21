@@ -1,4 +1,5 @@
 require 'httparty'
+require 'json'
 
 class WeatherService
   include HTTParty
@@ -7,6 +8,7 @@ class WeatherService
 
   def self.forecast_ten_days(state, city)
     get("/forecast10day/q/#{state}/#{city}.json").parsed_response
+    # JSON.parse(File.read("./ten_day.json"))
   end
 
   def self.conditions(state, city)

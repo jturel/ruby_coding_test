@@ -8,7 +8,7 @@ Generate a weather report for two cities of your choice.
 
 For each city list a few details relating to the weather:
 - City name and location
-- Current temperatute
+- Current temperature
 - Current wind speed
 - High and Low temperature for each day in the next 10 days
 - Any alerts for the location
